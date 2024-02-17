@@ -1,26 +1,29 @@
 package Revision;
 
+import java.util.ArrayList;
+
 public class LexicoString {
-public static void main(String[] args) {
-	
-	String str="abc";
-	
-	print(str,"");
-	
-}
-
-private static void print(String str, String ans) {
-
-	if(str.length()==0) {
+	public static void main(String[] args) {
+		String str="abcd";
+		ArrayList<String> list=new ArrayList<>();
 		
-		System.out.println(ans);
+		fn(str,"",list);
+		for (int i = str.length()  ; i < list.size(); i++) {
+			System.out.println(list.get(i));
+		}
 	}
-	if(str.length()<0) {
+
+	private static void fn(String s, String ans, ArrayList<String> list) {
+		if(s.length()==0) {
+			list.add(ans);
+			
 		
-		return;
-	}
-	
-	print(str.substring(0), ans+str.charAt(0));
-	print(str.substring(0),ans);
-}
+		
+		
+		}
+		for (int j = 0; j < s.length(); j++) {
+			
+		
+		fn(s.substring(0, j)+s.substring(1+j),ans+s.charAt(j), list);
+	}}
 }

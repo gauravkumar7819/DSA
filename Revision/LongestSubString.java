@@ -1,11 +1,10 @@
 package Revision;
 
 import java.util.Arrays;
-import java.util.Iterator;
 
 public class LongestSubString{
 	public static void main(String[] args) {
-		
+
 		String s="pwwkew";
 		char []  arr=new char[s.length()];
 		for (int i = 0; i < s.length(); i++) {

@@ -9,7 +9,7 @@ public class StrPermu {
 //	}
 //
 //	private static void fn(String s, String ans   ) {
-//		// TODO Auto-generated method stub
+
 //		
 //		if(s.length()==0) {
 //			System.out.println(ans);

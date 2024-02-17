@@ -4,7 +4,7 @@ public class RomanToInteger {
 
 	public static void main(String[] args) {
 String s="VIII";
-char V=5;
+// char V=5;
 romanToInt( s); 
 
 
