@@ -16,7 +16,7 @@ public class Fibbonacci {
         }
      int a=   print(n-1);
      System.out.println(a);
-       int b= print(n-2);
+    int b= print(n-2);
       
        return a+b;
     }

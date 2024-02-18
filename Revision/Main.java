@@ -2,27 +2,26 @@ package Revision;
 
 import java.util.*;
 public class Main {
-    public static void main(String args[]) {
-Scanner scanner = new Scanner(System.in);
-        String str = scanner.nextLine();
-                int count = countTwins(str, 0);
-                        System.out.println(count);
-                                scanner.close();
-                                    }
+    public static void main (String args[]) {
+Scanner sc=new Scanner(System.in);
+int n=sc.nextInt();
+int arr[]=new int[n];
+for(int i=0;i<n;i++)
+{
+   arr[i] =sc.nextInt();}
+Set<List> ans=new HashSet<>();
+		print(arr, 0, new ArrayList<Integer>(), ans);
+		System.out.println(ans);
+	}
 
-    public static int countTwins(String str, int index) {
-        if (index >= str.length() - 2) {
-                    return 0;
-                            }                
-        int count = 0;
-        if (str.charAt(index) == str.charAt(index + 2)) {
-                    count = 1 + countTwins(str, index + 1);
-                            }                                                                  
-                                                                                       
-        else {
-            count = countTwins(str, index + 1);
-                    }
+	public static void print(int[] arr, int lp, ArrayList<Integer> list, Set<List> ans) {
 
-        return count;
-    }
-}
+
+        ans.add(new ArrayList<Integer>(list));
+
+		for (int i = lp; i < arr.length; i++) {
+			list.add(arr[i]);
+			print(arr, i + 1, list, ans);
+			list.remove(list.size() - 1);
+
+		}}}

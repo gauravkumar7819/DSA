@@ -41,12 +41,12 @@ private static void print(int n, int ans) {
 		
 	
 	System.out.println(ans);}
-	int i=0;
-	if (i==0) {
-		i=0;
+	// int i=0;
+	// if (i==0) {
+	// 	i=0;
 		
-	}
-	for ( i=1; i <=9; i++) {
+	// }
+	for ( int i=1; i <=9; i++) {
 		print(n,ans*10+i);
 	}
 
