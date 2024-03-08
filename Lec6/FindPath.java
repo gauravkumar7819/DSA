@@ -20,7 +20,11 @@ public class FindPath {
 		}
 		if (col<arr[0].length-1) {
 			count+=print(arr,row,col+1,ans+"H");
-			return count;
+			
+		}
+		if (col<arr[0].length-1 &&row<arr.length-1) {
+			count+=print(arr, row+1, col+1, ans+"D");
+			
 		}
 		return count;
 	}

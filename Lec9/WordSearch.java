@@ -26,15 +26,22 @@ public class WordSearch {
         char[][] board ={{'A','B','C','E'},
                          {'S','F','C','S'},
                          {'A','D','E','E'}};
-        String word = "ABCCED";
+        String word = "AB";
+        boolean flag=false;
         for (int i = 0; i < board.length; i++) {
             for (int j = 0; j < board.length; j++) {
                 if(board[i][j]==word.charAt(0)){
-                    solve(board,i,j,0,word);
+                   flag= solve(board,i,j,0,word);
+                   if (flag) {
+                    System.out.println(true);
+                    return;
+                }
+                  
                 }
             }
         }
-        System.out.println(solve(board, 0, 0, 0, word));
+       
+        System.out.println(false);
     }
     
 }

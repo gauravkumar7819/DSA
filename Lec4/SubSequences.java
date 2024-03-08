@@ -12,15 +12,17 @@ public class SubSequences {
 	
 		
 		if(s.length()==0) {
-			System.out.println(ans);
+			System.out.print(ans +" ");
 			return;
 			
 		}
 		
+		
 		fn(s.substring(1),ans+s.charAt(0));
 
 		fn(s.substring(1),ans);
-//		
+		int k=s.charAt(0);
+		// ans+=s.charAt(0);
 //		
 //		
 //		

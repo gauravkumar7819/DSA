@@ -12,7 +12,7 @@ public static void main(String[] args) {
 	private static void print(int[][] arr, int row, int col, String ans) {
 		
 		if (row==arr.length-1 && col==arr[0].length-1) {
-//			System.out.println(ans);
+			// System.out.println(ans);
 			a++;
 			return ;
 		}

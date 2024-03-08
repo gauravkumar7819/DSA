@@ -5,7 +5,7 @@ import java.util.List;
 
 public class Subset {
 public static void main(String[] args) {
-	int []arr={1,2,3};
+	int []arr={1,2,2};
 	List<Integer> list=new ArrayList<>();
 	List<List<Integer>> ans=new ArrayList<>();
 	print(arr,list,0,ans);
