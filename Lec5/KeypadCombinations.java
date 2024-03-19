@@ -1,26 +1,31 @@
 package Lec5;
 
+import java.util.*;
+
 public class KeypadCombinations {
-	static String[] arr = { "", "abc", "def", "ghi", "jkl", "mno", "pqrs", "tuv", "wxyz" };
+	static String[] map = { "", "", "abc", "def", "ghi", "jkl", "mno", "pqrs", "tuv", "wxyz" };
 
 	public static void main(String[] args) {
-		String digits = "22";
-		print(digits, arr, "");
+
+		String ques = "";
+		List<String> ll = new ArrayList<>();
+		KeyPaid(ques, "", ll);
+		System.out.println(ll);
+
 	}
 
-	private static void print(String digits, String[] arr, String ans) {
-		if (digits.length() == 0) {
-			System.out.println(ans);
+	public static void KeyPaid(String ques, String ans, List<String> ll) {
+		if (ques.length() == 0) {
+			// System.out.println(ans);
+			ll.add(ans);
 			return;
 		}
-		char ch = digits.charAt(0);
-		int k = ch - 48;
-		String ques = arr[k - 1];
+		char ch = ques.charAt(0);// 2
+		String press = map[ch - '0'];// abc
+		for (int i = 0; i < press.length(); i++) {
+			KeyPaid(ques.substring(1), ans + press.charAt(i), ll);
 
-		for (int i = 0; i < ques.length(); i++) {
-			print(digits.substring(1), arr, ans + ques.charAt(i));
 		}
 
 	}
-
 }
