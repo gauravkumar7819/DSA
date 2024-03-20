@@ -3,11 +3,12 @@ import java.util.Arrays;
 
 public class RotateArray {
         public static void main(String[] args) {
-            int k=3;
+            int k=100;
 	int arr[]= {1 ,2 ,3,4,5};
- System.out.println(Arrays.toString( rotate(arr, k)));
+	k=k%5;
+ System.out.println(Arrays.toString( rotateArr(arr, k)));
     }
-    public static int[] rotate(int[] arr, int k) {
+    public static int[] rotateArr(int[] arr, int k) {
     if(arr.length==1) {
     	
     	return arr;

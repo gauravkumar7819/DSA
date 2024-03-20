@@ -88,6 +88,7 @@ public Node get(int val){
     return temp;
 
 }
+
 public void removeKthdata(int val){
     Node temp=get(val);
     Node temp2=temp.next.next;
@@ -117,6 +118,9 @@ public  void display() {
        ll.display();
        ll.reverseList();
        ll.display();
+       ll.createCyle();
+       ll.display();
+       System.out.println(ll.isCyle());
     }
    
 }
