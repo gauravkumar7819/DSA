@@ -54,15 +54,15 @@ System.out.println(size);
 
 display(head);
 System.out.println();
-rotate(head,2,tail);
+rotate(head,1,tail,size);
    
 }
 
-private static void rotate(Node head,int k,Node tail) {
+private static void rotate(Node head,int k,Node tail, int size2) {
     Node temp=head;
 Node temp2=head;
-
-for (int i = 0; i <=6; i++) {
+k=k%size2;
+for (int i = 0; i <=k; i++) {
     temp=temp.next;
     
 }
