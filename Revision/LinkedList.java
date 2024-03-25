@@ -7,6 +7,6 @@ class Node{
     int data;
 
 }
-Node 
+
     
 }

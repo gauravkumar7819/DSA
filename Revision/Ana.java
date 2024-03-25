@@ -13,7 +13,7 @@ private static void print(int[] arr, int st, int end) {
    
 int mid=(st+end)/2;
 if (mid==st+1) {
-    arr[0]=
+
        return; 
 }
 
