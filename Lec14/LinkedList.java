@@ -122,6 +122,10 @@ public  void display() {
        ll.display();
        System.out.println(ll.isCyle());
     }
+    public Lec16.ReverseLinkedList.Node mid() {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'mid'");
+    }
    
 }
 

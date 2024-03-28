@@ -3,7 +3,7 @@ package Lec16;
 
 import Lec14.LinkedList;
 
-public class ReverseLinkedList {
+public class ReverseLinkedList extends LinkedList {
     class Node{
         int data;
         Node next;
@@ -12,6 +12,18 @@ public class ReverseLinkedList {
 
         }
     
+}
+public Node mid(){
+    Node slow = head;
+    Node fast = head;
+    while (fast != null && fast.next != null) {
+        slow = slow.next;
+        fast = fast.next.next;
+        
+
+
+}
+return slow;
 }
 
 public int size;
@@ -40,5 +52,6 @@ while (curr!=null) {
         ll.display();
         ll.reverseList();
         ll.display();
+        Nodell.mid();
     }
 }
