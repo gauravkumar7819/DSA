@@ -39,19 +39,18 @@ public class FindKth {
     public static int findKthFromLast(Node head, int k) {
         Node slow = head;
         Node fast = head;
+  
+        for (int i = 1; i < k; i++) {
+            fast=fast.next;
 
-        for (int i = 0; i < k; i++) {
-            if (fast == null) {
-                return -1; // k is greater than the length of the linked list
-            }
-            fast = fast.next;
+            
         }
-
-        while (fast != null) {
-            slow = slow.next;
-            fast = fast.next;
+        while (fast!=null && fast.next!=null) {
+            slow=slow.next;
+            fast=fast.next;
+            
         }
-
-        return slow.data;
+return slow.data;
+        
     }
 }
