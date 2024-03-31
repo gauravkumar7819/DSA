@@ -1,24 +1,30 @@
 package Lec9;
 
+import java.util.Scanner;
+
 public class MappedString {
       public static void main(String[] args) {
-        String s="1125";
-        print(s,"");
+    Scanner sc =new Scanner(System.in);;
+
+        print(sc.nextLine(),"");
         
       }
       public static void print(String s,String ans){
         if(s.length()==0){
-            System.out.print(ans +" ");
+            System.out.println(ans +" ");
             return;
         }
           
-        print(s.substring(1),ans+(char)(s.charAt(0)+48));
+        print(s.substring(1),ans+(char)(s.charAt(0)+16));
         if(s.length()>=2){
         int k = Integer.parseInt(s.substring(0,2));
-        char c =(char)(k+96);
+        if (k<=26) {
+          
+        
+        char c =(char)(k+64);
         print(s.substring(2),ans+c);
     } 
 
       }
-    
+      }
 }

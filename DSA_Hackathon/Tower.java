@@ -1,17 +1,17 @@
 package DSA_Hackathon;
 
+import java.util.*;
 public class Tower {
-    public static void main(String[] args) {
-        int n=3;
-        print(n,'A','B','C');
+    public static void main(String args[]) {
+        Scanner scn=new Scanner(System.in);
+        int n=scn.nextInt();
+        toh( n , "A","B","C");
     }
-
-    private static void print(int n, char from, char to, char helper) {
-       if (n==0) {
+    public static void toh(int n, String s1,String s2,String s3){
+        if(n==0)
         return ;
-       }
-       print(n-1, from, to, helper);
-       System.out.println("Moving ring " + n + " from " + to + " to " + from);  
-       print(n-1,helper, from, to);
-       }
+        toh(n-1,s1,s3,s2);
+        System.out.println("Moving ring "+n+" from "+s1+" to "+ s2);
+        toh(n-1,s3,s2,s1);
+    }
 }

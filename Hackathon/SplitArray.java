@@ -1,5 +1,4 @@
-package Lec9;
-
+package Hackathon;
 import java.util.*;
 public class SplitArray {
     public static void main(String args[]) {

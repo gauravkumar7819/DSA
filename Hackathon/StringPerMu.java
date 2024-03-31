@@ -1,4 +1,4 @@
-package Hackathon_2;
+package Hackathon;
 
 import java.util.ArrayList;
 import java.util.List;
