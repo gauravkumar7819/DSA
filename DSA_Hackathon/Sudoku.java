@@ -78,10 +78,6 @@ return flag;
         return true;
         
     }
-
-
-
-
     private static void display(int[][] grid) {
 for (int i = 0; i < grid.length; i++) {
     for (int j = 0; j < grid.length; j++) {
