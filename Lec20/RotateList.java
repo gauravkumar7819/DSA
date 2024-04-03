@@ -28,6 +28,7 @@ public class RotateList {
 
 public static void main(String[] args) {
     Scanner sc=new Scanner(System.in);
+    
     int data=sc.nextInt();
     Node head=null;
     Node tail=null;
