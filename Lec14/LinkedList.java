@@ -118,14 +118,14 @@ public  void display() {
        ll.display();
        ll.reverseList();
        ll.display();
-       ll.createCyle();
+    //    ll.createCyle();
        ll.display();
-       System.out.println(ll.isCyle());
+    //    System.out.println(ll.isCyle());
     }
-    public Lec16.ReverseLinkedList.Node mid() {
+    // public Lec16.ReverseLinkedList.Node mid() {
         // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'mid'");
+        // throw new UnsupportedOperationException("Unimplemented method 'mid'");
     }
    
-}
+
 
