@@ -20,6 +20,7 @@ public class RemoveN {
         Node tail = null;
 
         int n = sc.nextInt();
+        int p=n;
         int k = sc.nextInt();
         while (n-- > 0) {
             int data =sc.nextInt();
@@ -35,17 +36,31 @@ public class RemoveN {
         }
 
         // int k = sc.nextInt();
-        int result = findKthFromLast(head, k);
+        int result = findKthFromLast(head, k,p);
         // System.out.println();
         // System.out.println(result);
      
     }
 
-    public static int findKthFromLast(Node head, int k) {
+    public static int findKthFromLast(Node head, int k, int n) {
         Node slow = head;
         Node fast = head;
         fast = fast.next;
-        for (int i = 0; i < k; i++) {
+        if (n==k) {
+            Node temp=head;
+            Node temp2=temp.next;
+    
+    temp.next=temp2;
+    head=temp.next;
+    display(head);
+            
+        }
+        
+       
+        else{
+
+        
+        for (int i = 0; i < k-1; i++) {
             if (fast == null) {
                 return -1; // k is greater than the length of the linked list
             }
@@ -59,8 +74,8 @@ public class RemoveN {
         Node temp2=slow.next.next;
 
 slow.next=temp2;
-display(head);
-
+display(head);}
+    
         return slow.data;
     }
     public static void display(Node head) {
