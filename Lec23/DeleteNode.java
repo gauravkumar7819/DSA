@@ -21,13 +21,13 @@ public class DeleteNode {
 
         int n = sc.nextInt();
 
-        while (n-- > 0) {
+    while (n-- > 0) {
             int data =sc.nextInt();
             Node newNode = new Node(data);
-            if (head == null) {
+        if (head == null) {
                 head = newNode;
                 tail = newNode;
-            } else {
+} else {
                 tail.next = newNode;
                 tail = newNode;
             }

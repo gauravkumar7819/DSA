@@ -52,6 +52,6 @@ while (curr!=null) {
         ll.display();
         ll.reverseList();
         ll.display();
-        Nodell.mid();
+        // Nodell.mid()
     }
 }
