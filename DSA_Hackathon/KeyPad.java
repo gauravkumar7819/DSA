@@ -17,8 +17,7 @@ if (digits.length()==0) {
     return;
     
 }
-
-        char ch=digits.charAt(0);
+ char ch=digits.charAt(0);
         int k=ch-48;
 
         String str=arr[k-1];
