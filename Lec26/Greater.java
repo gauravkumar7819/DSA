@@ -18,7 +18,7 @@ public class Greater {
                     // num[k]=arr[j];
                     list.add(arr[j]);
                     k++;
-                    
+                     
 break;
                 }
                 else if (arr[i]<arr[j]) {
